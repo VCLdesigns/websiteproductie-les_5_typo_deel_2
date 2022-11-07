@@ -1,0 +1,122 @@
+/* © Victor Loots, 2022
+/*
+/* Fonts */
+@font-face {
+  font-family: "domineregular";
+  src: url("../fonts/domine-regular-webfont.eot");
+  src: url("../fonts/domine-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/domine-regular-webfont.woff2") format("woff2"),
+    url("../fonts/domine-regular-webfont.woff") format("woff"),
+    url("../fonts/domine-regular-webfont.ttf") format("truetype"),
+    url("../fonts/domine-regular-webfont.svg#domineregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "montserratregular";
+  src: url("../fonts/montserrat-regular-webfont.eot");
+  src: url("../fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/montserrat-regular-webfont.woff2") format("woff2"),
+    url("../fonts/montserrat-regular-webfont.woff") format("woff"),
+    url("../fonts/montserrat-regular-webfont.ttf") format("truetype"),
+    url("../fonts/montserrat-regular-webfont.svg#montserratregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "open_sansregular";
+  src: url("../fonts/opensans-regular-webfont.eot");
+  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
+    url("../fonts/opensans-regular-webfont.woff") format("woff"),
+    url("../fonts/opensans-regular-webfont.ttf") format("truetype"),
+    url("../fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'git';
+  src: url('../fonts/git.eot?37730019');
+  src: url('../fonts/git.eot?37730019#iefix') format('embedded-opentype'),
+    url('../fonts/git.woff2?37730019') format('woff2'),
+    url('../fonts/git.woff?37730019') format('woff'),
+    url('../fonts/git.ttf?37730019') format('truetype'),
+    url('../fonts/git.svg?37730019#git') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+/* Variabelen */
+:root {
+  --font_titel: "domineregular", Georgia, serif;
+  --font_subtitel: "montserratregular", Verdana, sans-serif;
+  --font-brood: "open_sansregular", Verdana, sans-serif;
+  --kleur_wit: #f8f7f3;
+  --kleur_zwart: #303030;
+}
+
+/* 
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+/* Standards */
+
+.icon-github, .icon-github-text{
+  font-family: "git";
+
+}
+.icon-github:before {
+  content: '\e800';
+}
+.icon-github-text:before {
+  content: '\e801';
+}
+
+body {
+  min-height: 100%;
+  color: var(--kleur_zwart);
+  background-color: var(--kleur_wit);
+  font-family: var(--font-brood);
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+
+#container {
+  margin: 0 auto;
+  width: 750px;
+}
+
+h1 {
+  font-family: var(--font_titel);
+  padding: 3rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--font_subtitel);
+  padding: 2rem;
+}
+
+.eerste_letter {
+  font-size: 2em;
+  text-shadow: -8px -10px 10px #868585;
+}
+
+p {
+  padding: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
