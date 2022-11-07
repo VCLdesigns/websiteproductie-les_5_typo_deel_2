@@ -98,7 +98,9 @@ body {
 h1 {
   font-family: var(--font_titel);
   padding: 3rem;
+  margin-bottom: 1rem;
   text-align: center;
+  border-bottom: var(--kleur_zwart) 2px solid;
 }
 
 h2 {
@@ -119,4 +121,5 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
+  
 }
